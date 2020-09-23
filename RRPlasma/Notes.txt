@@ -1,0 +1,38 @@
+Plasma Worlds by Robert Rayment  June 2002
+
+As there are two progs I've put the palette files in a parallel
+folder (/Pals).  This means that they are picked up by backtracking
+from the app. folder so do not change the folder layout unless you
+also change the code to pick up the pal files.
+
+The 3D-shapes wrap faster when starting with a smaller picture.  
+Landscape resizes the picture to the maximum size (WxH=512x384)
+so after this the 3D shape wrapping will be a bit slow.  If you
+want landscape to pick up a scrolled or color-cycled picture make
+sure the picture is at the maximum size first.
+
+Tunnel smoothing is different in that it smooths the palette directly.
+This can always be recovered by clicking the pal file in the list box
+and pressing GO.
+
+Only the file named "Plasma.bmp" can be saved to the app. folder.
+Plasma, 3D shapes & landscape pictures can all be saved.  If you
+want choices then put in a CommonDialog on the Save picture button.
+
+In the ASM prog I've left in some redundant VB Subs
+Sub FillSmallArray (core transform to 3D) & Sub FloorCASTER
+(landscape projection) for reference.  The core plasma routine
+is in the VB version.
+
+The assembler methods can be found in PSC prog
+'NASM Editor, assembler & Tutorial'.
+
+The progs 'Tunnels & things', 'VTrack' and 'Spheroid
+Wrapping' explain some of the techniques.
+
+If you want to design your own palettes then you can use
+the prog 'Palette Design' on PSC but there are others.
+
+Good luck
+
+
